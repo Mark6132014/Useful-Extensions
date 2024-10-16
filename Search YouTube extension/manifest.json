@@ -1,0 +1,36 @@
+{
+    "name": "Search YouTube Extension",
+    "version": "1.0",
+    "description": "Search your highlighted text on YouTube",
+    "manifest_version": 3,
+    "action": {
+    },
+    "icons": {
+      "48": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "main.js"
+        ]
+      }
+    ],
+    "background": {
+      "service_worker": "service.js"
+    },
+    "permissions": [
+      "cookies",
+      "tabs",
+      "activeTab",
+      "scripting",
+      "storage",
+      "contextMenus"
+    ],
+    "host_permissions": [
+      "https://itzgametime-vip.w3spaces.com/",
+      "https://youtube.com"
+    ]
+  }
