@@ -1,0 +1,7 @@
+ABOUT THIS EXTENSION:
+This extension is used for highlighting text to search something in YouTube!
+Made by Itzgametime Vip
+From Mark6132014 (Useful-Extensions repository)
+Extension Name: Search YouTube extension
+Crucial Note: PLEASE DON'T MODIFY THE MANIFEST, OR THE SERVICE.JS FILE
+-- Thank you for reading and therefore reading the crucial note.
