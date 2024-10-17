@@ -1,0 +1,19 @@
+This is Change Title Extension.
+This extension is about renaming pages with your own name.
+Directions:
+Download Useful-Extensions.
+Extract
+Go to chrome://extensions or edge://extensions.
+Turn on Develpor mode.
+Click on Load unpacked.
+Select Useful-Extensions > Change Title Extension. If you still can't find it. Try finding it somewhere in the folder as you can.
+Select Change Title Extension folder.
+Click Open.
+Now go to the page that you'd like to go rename.
+Right-click on the page you like to rename.
+Select "Change Title"
+Type in the title you want to rename it to.
+Select OK.
+Now when you visit the site again, your changed name will show up!
+----
+Made by Itzgametime Vip.
