@@ -1,0 +1,9 @@
+How to download Useful Extensions and all of it!
+Download Useful-Extensions.
+Extract
+Go to chrome://extensions or edge://extensions.
+Turn on Develpor mode.
+Click on Load unpacked.
+Then go to Useful-Extensions
+If it shows you the folder again once you click on it, click it again.
+Then choose a extension you want to have in your browser.
