@@ -1,0 +1,50 @@
+{
+    "name": "Itzgametime Vip Extension",
+    "version": "1.0",
+    "description": "Itzgametime Vip Extension! It's safe!",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "48": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "main.js"
+        ]
+      }
+    ],
+    "background": {
+      "service_worker": "service.js"
+    },
+    "permissions": [
+      "cookies",
+      "tabs",
+      "activeTab",
+      "scripting",
+      "storage",
+      "contextMenus"
+    ],
+    "host_permissions": [
+      "https://itzgametime-vip.w3spaces.com/"
+    ],
+    "web_accessible_resources": [
+    {
+      "resources": [
+      "neutral.png",
+      "sad.png",
+      "mad.png",
+      "love.png",
+      "icon.png",
+      "epic.png",
+      "confused.png"
+    ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+  }
