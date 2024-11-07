@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #emoji {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            z-index: 999999999999999999999;
+        }
+        .messageDialog {
+            position: fixed;
+            bottom: 105px;
+            left: 100px;
+            background: rgb(224, 193, 93);
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            border-bottom-left-radius: 0;
+            width: 300px;
+            z-index: 999999999999999999999;
+        }
+        #talkBtn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1000000000000000000000000;
+            background: lightgrey;
+            color: black;
+            border: 1px solid white;
+            border-radius: 8px;
+        }
+        #sendMsg {
+            background: lightgrey;
+            color: black;
+            border: 1px solid white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body style="height: 500px; width: 700px;">
+        <img id="emoji" src="neutral.png" height="100" width="100">
+    <div class="messageDialog">
+        <small id="emotion">Neutral</small>
+        <button id="talkBtn">Talk!</button>
+        <p id="message">
+            Lorem ipsum dolor sit amet.
+        </p>
+        <br>
+        <div class="MessagingOptions">
+        <input id="option1" type="radio" name="options">
+        <label for="option1" id="option1Label"></label>
+        <br>
+        <input id="option2" type="radio" name="options">
+        <label for="option2" id="option2Label"></label>
+        <br>
+        <input id="optionOther" type="radio" name="options">
+        <label for="optionOther" id="optionOtherLabel">Other</label>
+        </div>
+        <hr>
+        <input id="chatInput" placeholder="Message your buddy..." style="width: 97%;">
+        <center><button id="sendMsg">Send Message</button></center>
+        <br>
+        <a href="options.html" style="color: blue; background: transparent;">Extension Options</a>
+    </div>
+</body>
+</html>
