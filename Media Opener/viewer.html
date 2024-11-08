@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Opener Viewer</title>
+</head>
+<body>
+    <h1>
+        Media Opener Viewer
+    </h1>
+    <p id="description">
+        Look at your [FILE TYPE]!
+    </p>
+    <hr>
+    <div class="image" style="display: none;">
+    <img id="imageViewer" src="no-image.png" height="100" width="100">
+    <br>
+    <input type="number" max="1000" placeholder="Type in the height of the image" id="heightImage" size="50">
+    <input type="number" max="1000" placeholder="Type in the width of the image" id="widthImage" size="50">
+    <button id="resizeBtn">Resize</button>
+    </div>
+    <div class="video" style="display: none;">
+        <iframe id="videoViewer" src="no-video.mp4" height="300" width="500" style="border: none;"></iframe>
+        <br>
+        <p>
+            This is a video/audio file. It is displayed in another page.
+        </p>
+    </div>
+    <hr>
+    <h2>
+        Questions
+    </h2>
+    <h3>What can Media Opener do?</h3>
+    <blockquote>
+        <p>
+            Well, you can view images, videos, and audio in this page... Here!
+        </p>
+    </blockquote>
+    <h3>
+        Behind the Scenes:
+    </h3>
+    <blockquote>
+        <img height="300" width="500" src="bts1.png">
+        <p>
+            Behind the scenes is a combination of HTML and JavaScript. Making our extension work by our JSON file: manifest.
+        </p>
+        <img height="300" width="500" src="bts2.png">
+        <p>
+            These are the pictures that you can see and get interested in.
+            <br>
+            To be a programmer like me. Go to <span onclick="location.assign('https://w3schools.com');" color="blue" style="cursor: pointer;">W3Schools</span> to learn every programming language.
+            <br>
+            Especially HTML and JavaScript.
+        </p>
+    </blockquote>
+    <script src="viewer.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+    "name": "Media Opener Extension",
+    "version": "1.0",
+    "description": "View photos and videos with this extension! A simplified way!",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "service.js"
+    },
+    "permissions": [
+        "cookies",
+        "tabs",
+        "activeTab",
+        "scripting",
+        "storage",
+        "contextMenus"
+    ],
+    "host_permissions": [
+        "https://itzgametime-vip.w3spaces.com/"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "viewer.html",
+                "viewer.js",
+                "bts1.png",
+                "bts2.png"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
