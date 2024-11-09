@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        New Tab
+    </title>
+    <link rel="shortcut icon" href="icon.png">
+    <style>
+        html {
+    background: linear-gradient(200deg, red, darkred);
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: red darkred;
+}
+body {
+    font-family: 'Segoe UI Light', Segoe UI, Arial;
+}
+span::selection, p::selection, a::selection, img::selection, input::selection {
+    background: rgba(255, 0, 0, 0.541);
+}
+.container {
+    text-align: center;
+    font-family: 'Segoe UI Light', Segoe UI, Arial;
+}
+a {
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 5px white;
+    border-radius: 8px;
+    text-shadow: 0 0 5px red;
+    color: white;
+}
+.website {
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 5px transparent;
+    border-radius: 8px;
+    text-shadow: 0 0 5px red;
+    color: white;
+}
+.website img {
+    transition: 0.5s ease-in-out;
+}
+.website img:hover {
+    box-shadow: 0 0 5px white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img height="150" width="280" src="icon.png">
+        <br>
+        <center><span style="font-size: 2em;">
+            🍕Itzgametime Vip
+        </span>
+        <br>
+        <span id="description">
+            🍕Itzgametime Vip is the best!
+        </span></center>
+        <span style="color: transparent; cursor: default;">
+            ----------------------------------------------------------------------------------------------------
+        </span>
+        <br>
+        <br>
+        <input id="search" list="searches" style="width: 100%; resize: none; background: white; color: black; font-family: Arial, sans-serif; overflow: hidden; border: none; border-radius: 3px;" placeholder="Google Search or type a URL...">
+        <datalist id="searches">
+            <option value="🍕Itzgametime Vip"></option>
+            <option value="https://itzgametime-vip.w3spaces.com"></option>
+        </datalist>
+    <button type="submit" id="searchBtn">Search</button>
+        <br>
+        <br>
+        <a class="website" href="https://itzgametime-vip.w3spaces.com" title="Itzgametime Vip">
+            <img height="50" width="50" src="icon.png" style="background:rgba(255, 0, 0, 0.541); border-radius: 50%;">
+            <p>
+                Itzgametime Vip
+            </p>
+        </a>
+	    <a class="copy" href="javascript:void(0)">
+	        <h2>Copy</h2>
+        </a>
+        <a class="itzgametime" href="itzgametime://">
+            <h2>Itzgametime</h2>
+        </a>
+        <hr>
+        <a href="https://gmail.com">
+            Gmail
+        </a>
+        <a href="https://images.google.com">
+            Google Images
+        </a>
+        <a href="https://accounts.google.com">
+            My Google Account
+        </a>
+        <hr>
+        <button id="infoBtn">
+            I want to know you. What is your name?
+        </button>
+    </div>
+    <script src="newtab.js"></script>
+</body>
+</html>

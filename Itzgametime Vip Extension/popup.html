@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Itzgametime Vip Extension</title>
+</head>
+<body>
+    <style>
+        p {
+            font-family: Segoe UI Light, Segoe UI, Arial;
+            color: red;
+        }
+        p::selection {
+            background: rgba(255, 0, 0, 0.541);
+            color: white;
+        }
+        span::selection {
+            background: rgba(255, 0, 0, 0.541);
+            color: white;
+        }
+        a::selection {
+            background: rgba(255, 0, 0, 0.541);
+            color: white;
+        }
+        input::selection {
+            background: rgba(255, 0, 0, 0.541);
+            color: white;
+        }
+        textarea::selection {
+            background: rgba(255, 0, 0, 0.541);
+            color: white;
+        }
+        html, body {
+            scrollbar-color: red darkred;
+        }
+        #scroll {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        .parallaxbg {
+            background: linear-gradient(red, darkred);
+        }
+        .parallax {
+            background: url("icon.png");
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <div class="header" style="position: fixed; top: 0; left: 0; border: 1px solid black; background: white; height: 80px; width: 100%;">
+    <img src="icon.png" height="50" width="50"><img src="gummies.png" height="50" width="100" style="position: fixed; top: 10px; right: 0;" id="gummy">
+    <p class="extensionName">Itzgametime Vip Extension!</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="parallaxbg">
+    <div class="parallax">
+    </div>
+    </div>
+    <button id="cursor">
+        Change cursor
+    </button>
+    <button id="showWebsite">
+    Show Website
+    </button>
+    <button id="download">
+        Download our icon!
+    </button>
+    <p id="output">
+    <p>
+        Updates: TTS, Auto Scroll, Parallax scrolling!
+    </p>
+    <a href="#" id="web" style="display: none;" target="_blank">
+        Website
+    </a>
+    <hr>
+    <p>
+    Blocked Websites:
+    <br>
+    fart.com
+    <br>
+    poop.com
+</p>
+<br>
+<p>
+    Websites that change automatically:
+    <br>
+    Google
+</p>
+<br>
+<textarea placeholder="Notes here..." style="resize: none; height: 400px; width: 450px;"></textarea>
+    <script src="popup.js" type="module">
+    </script>
+</body>
+</html>
