@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        New Tab
+    </title>
+    <style>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: lightgray;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            background: white;
+            color: black;
+            height: 100vh;
+            width: 90%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    </style>
+    <link rel="shortcut icon" href="icon.png">
+</head>
+<body>
+    <center>
+        <div class="container">
+        <h2 id="title" style="font-size: 3em;">
+            Hello. Welcome to the Homepage!
+        </h2>
+        <input id="search" list="searches" style="width: 70%; resize: none; background: lightgrey; color: black; font-family: Arial, sans-serif; overflow: hidden; border: none; border-radius: 3px;" placeholder="Google Search or type a URL...">
+        <button id="searchBtn">Search!</button>
+        <br>
+        <button onclick="location.assign('https://gmail.com');">Gmail</button>
+        <button onclick="location.assign('https://images.google.com');">Google Images</button>
+        <datalist id="searches">
+            <option value="Current stock market today"></option>
+            <option value="Give me ideas of my school presentation"></option>
+            <option value="Tutorials"></option>
+        </datalist>
+        <hr>
+        <h2>
+            Is it a great time to email somebody?
+        </h2>
+        <p>
+            Email someone from mailto
+        </p>
+        <br>
+        <input type="text" id="emailAddress" placeholder="johndoe@example.org">
+        <button id="emailBtn" onclick="location.assign(`mailto:${document.getElementById('emailAddress').value}`);">Email them</button>
+        <hr>
+        <h2>
+            Set up or edit your profile here:
+        </h2>
+        <button id="setupProfileBtn">Edit/Setup Profile</button>
+        <hr>
+        <iframe width="900" height="3000" src="https://rss.app/embed/v1/wall/xeI4ut6ngjBSnBxC" frameborder="0"></iframe>
+    </center>
+    <script src="newtab.js"></script>
+</body>
+</html>
